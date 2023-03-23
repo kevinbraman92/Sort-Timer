@@ -33,9 +33,7 @@ def sort_timer(function):
 
 @sort_timer
 def bubble_sort(a_list):
-    """
-  Sorts a_list in ascending order
-  """
+    """Sorts a_list in ascending order using the bubble_sort method."""
     for pass_num in range(len(a_list) - 1):
         for index in range(len(a_list) - 1 - pass_num):
             if a_list[index] > a_list[index + 1]:
@@ -46,9 +44,7 @@ def bubble_sort(a_list):
 
 @sort_timer
 def insertion_sort(a_list):
-    """
-    Sorts a_list in ascending order
-    """
+    """Sorts a_list in ascending order using the insertion_sort method."""
     for index in range(1, len(a_list)):
         value = a_list[index]
         pos = index - 1
@@ -72,8 +68,7 @@ def compare_sorts(bubble_function, insertion_function):
             base_list.append(random.randint(1, 1000))
 
         test_list = list(base_list)
-        bubble_plots.append(bubble_function(base_list))
-        insertion_plots.append(insertion_function(test_list))
+        bubble_plots.append(bubble_function(base_list)), insertion_plots.append(insertion_function(test_list))
         base_list.clear(), test_list.clear()
         test_cases, base_max_range = test_cases + 1, base_max_range + 1000
 

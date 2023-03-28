@@ -1,5 +1,5 @@
 # Author: Kevin Braman
-# GitHub username: bramank
+# GitHub username: kevinbraman92
 # Date: 2/24/2023
 # Description: This program defines a decorator function, two sorting functions, and a function to compare the
 #              performance of the sorting functions. The decorator function 'sort_timer' decorates the two sorting
